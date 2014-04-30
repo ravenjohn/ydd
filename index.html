@@ -1,0 +1,139 @@
+<!doctype html>
+	<head>
+		<title>Team YDD (YOLO Driven Development)</title>
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="image_src" href="img/favicon.png" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/font-comicneue/1.1/font.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="description" content="Team YDD (YOLO Driven Development) is composed of Adin Bautista, Ninz Eclarin and Raven Lagrimas." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="http://ravenjohn.github.io/ydd/img/logo.png"/>
+		<meta property="og:title" content="Team YDD."/>
+		<meta property="og:url" content="http://ravenjohn.github.io/ydd/"/>
+		<meta property="og:site_name" content="Team YDD"/>
+	</head>
+	<body>
+		<canvas class="tri-bg" id="outer1"></canvas>
+		<header>
+			<div id="logo_div">
+				<span id="logo_span">YDD</span> <br />
+				<span id="long_logo_span">YOLO Driven Development</span>
+			</div>
+			<div id="intro_div">
+				Team YDD is bla bla blah. Lorem ipsum dolor sit amet, consectetur  <br />
+				magra aiqua. Ut enim ad ririm veniom
+			</div>
+			<img src="img/logo.png" id="logo_img" alt="Logo"/>
+		</header>
+		<div id="white1" class="white">
+			<span class="helper"></span>
+			<blockquote>
+				You Only Live Once.
+			</blockquote>
+		</div>
+		<div id="adin_div" class="profile">
+			<div class="mask">
+				<div class="wrapper">
+					<div class="img">
+						<span class="helper"></span>
+						<div class="real_img"></div>
+					</div>
+					<div class="desc">
+						<p>
+							A BS Computer Science Undergraudate from the University of the Philippines in Los Banos. He took leave of absence for the Annual Year 2013-2014 to try his luck in the IT Industry. Got his first job as Web Developer in Key Discovery Consulting Inc. on March 2013 and developed Scotti and AgentBridge while working there for 3 months.
+						</p>
+						<p>
+							On July 2013, due to his hunger for more knowledge he moved to OpenovateLabs to try new technologies and platforms and try to be good at them. He was able to work with NodeJS, ObjectiveC, PhoneGap, Titanium, RFID Sensors, PHP, Ruby and Python while working there for 8 months. In preparation for coming back to school in the coming Annual Year 2014-2015, he moved to any.TV on March 2014 to work and enjoy his remaining months out of school.
+						</p>
+					</div>
+					<br class="clearfix" />
+				</div>
+				<br class="clearfix" />
+			</div>
+			<span class="clearfix"></span>
+			<canvas class="tri-bg inbetween" id="inner1"></canvas>
+		</div>
+		<div id="ninz_div" class="profile">
+			<div class="mask">
+				<div class="wrapper">
+					<div class="img">
+						<span class="helper"></span>
+						<div class="real_img"></div>
+					</div>
+					<div class="desc">
+						<p>
+							A BS Computer Science Undergraudate from the University of the Philippines in Los Banos. He took leave of absence for the Annual Year 2013-2014 to try his luck in the IT Industry. Got his first job as Web Developer in Key Discovery Consulting Inc. on March 2013 and developed Scotti and AgentBridge while working there for 3 months.
+						</p>
+						<p>
+							On July 2013, due to his hunger for more knowledge he moved to OpenovateLabs to try new technologies and platforms and try to be good at them. He was able to work with NodeJS, ObjectiveC, PhoneGap, Titanium, RFID Sensors, PHP, Ruby and Python while working there for 8 months. In preparation for coming back to school in the coming Annual Year 2014-2015, he moved to any.TV on March 2014 to work and enjoy his remaining months out of school.
+						</p>
+					</div>
+					<br class="clearfix" />
+				</div>
+				<br class="clearfix" />
+			</div>
+			<span class="clearfix"></span>
+			<canvas class="tri-bg inbetween" id="inner2"></canvas>
+		</div>
+		<div id="raven_div" class="profile">
+			<div class="mask">
+				<div class="wrapper">
+					<div class="img">
+						<span class="helper"></span>
+						<div class="real_img"></div>
+					</div>
+					<div class="desc">
+						<p>
+							A BS Computer Science Undergraudate from the University of the Philippines in Los Banos. He took leave of absence for the Annual Year 2013-2014 to try his luck in the IT Industry. Got his first job as Web Developer in Key Discovery Consulting Inc. on March 2013 and developed Scotti and AgentBridge while working there for 3 months.
+						</p>
+						<p>
+							On July 2013, due to his hunger for more knowledge he moved to OpenovateLabs to try new technologies and platforms and try to be good at them. He was able to work with NodeJS, ObjectiveC, PhoneGap, Titanium, RFID Sensors, PHP, Ruby and Python while working there for 8 months. In preparation for coming back to school in the coming Annual Year 2014-2015, he moved to any.TV on March 2014 to work and enjoy his remaining months out of school.
+						</p>
+					</div>
+					<br class="clearfix" />
+				</div>
+				<br class="clearfix" />
+			</div>
+			<span class="clearfix"></span>
+		</div>
+		<div id="white2" class="white">
+			<span class="helper"></span>
+			<blockquote>
+				You Only Live Once.
+			</blockquote>
+		</div>
+		<footer>
+			<canvas class="tri-bg" id="outer2"></canvas>
+		</footer>
+		<script>
+			(function (root) {
+				var doc = root.document,
+					profile_divs = doc.getElementsByClassName('profile'),
+					canvases = doc.getElementsByTagName('canvas'),
+					i = canvases.length,
+					ctx;
+
+				while (i--) {
+					ctx = canvases[i].getContext('2d');
+					ctx.fillStyle = "rgba(194,24,24, 0.57)";
+					ctx.beginPath();
+					ctx.moveTo(0, 120);
+					ctx.lineTo(120, 140);
+					ctx.lineTo(250, 0);
+					ctx.fill();
+					ctx.beginPath();
+					ctx.moveTo(120, 0);
+					ctx.lineTo(200, 140);
+					ctx.lineTo(280, 0);
+					ctx.fill();
+				}
+
+				(root.onresize = function () {
+					var i = profile_divs.length;
+					while (i--)
+						profile_divs[i].style.minHeight = root.innerHeight + 'px';
+				})();
+			}(this));
+		</script>
+	</body>
+</html>

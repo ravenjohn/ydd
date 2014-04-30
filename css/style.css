@@ -1,0 +1,154 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.clearfix{
+	clear: both;
+}
+.tri-bg{
+	left: 0;
+	position: absolute;
+	background: #D32222;
+	width: 100%;
+	height: 150px;
+}
+#outer1{
+	top: 0;
+}
+header {
+	margin-top: 150px;
+	height: 120px;
+	background: #111;
+	color: #FFF;
+}
+#logo_div{
+	width: 220px;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+#logo_span{
+	font-size: 80px;
+	line-height: 110px;
+}
+#long_logo_span{
+	position: absolute;
+	left: 35px;
+	bottom: 5px;
+	font-size: 13px;
+}
+#intro_div{
+	float: left;
+	margin-top: 35px;
+}
+#logo_img{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.white{
+	min-height: 285px;
+	height: 285px;
+	text-align: center;
+	width: 100%;
+	background: #FFF;
+}
+blockquote{
+	vertical-align: middle;
+	display: inline-block;
+	font-style: italic;
+	font-size: 40px;
+}
+#adin_div {
+	background-image: url('../img/bg1.jpg');
+}
+#ninz_div {
+	background-image: url('../img/bg2.jpg');
+}
+#raven_div {
+	background-image: url('../img/bg3.jpg');
+}
+.mask {
+	background-color: rgba(0,0,0,0.85);
+	min-height: inherit;
+}
+.profile{
+	resize: both;
+	position: relative;
+	height: auto;
+}
+.profile, .mask {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	text-align: center;
+}
+.profile .wrapper{
+	min-height: inherit;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.profile .img{
+	width: 300px;
+	min-height: inherit;
+	vertical-align: middle;
+	display: inline-block;
+}
+.profile .real_img{
+	width: 250px;
+	height: 250px;
+	background: url(../img/us.png);
+	border: 16px solid #7D1A1A;
+	border-radius: 250px;
+	vertical-align: middle;
+	display: inline-block;
+}
+#ninz_div .real_img{
+	background-position: -250px 0;
+}
+#raven_div .real_img{
+	background-position: 250px 0;
+}
+.helper{
+	vertical-align: middle;
+	min-height: inherit;
+	display: inline-block;
+}
+.profile .desc{
+	margin-left: 115px;
+	text-align: left;
+	color: #BEBEBE;
+	max-width: 50%;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 1.2;
+	position: relative;
+}
+.profile .desc:before{
+	position: absolute;
+	content: '{';
+	display: inline-block;
+	height: 100%;
+	color: #BEBEBE;
+	line-height: 250px;
+	font-size: 10em;
+	left: -100px;
+}
+
+#inner1{
+	-webkit-clip-path: polygon(0px 5px, 0px 155px, 100% 80px, 100% 40px);
+}
+#inner2{
+	-webkit-clip-path: polygon(0px 40px, 0px 80px, 100% 155px, 100% 5px);
+}
+.inbetween{
+	bottom: -80px;
+	z-index: 5;
+	top: inherit;
+	height: 180px;
+	/* background: #FFF; */
+}
